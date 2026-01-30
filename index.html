@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -899,7 +900,7 @@ function getRealTimeLocation() {
                 const data = await response.json();
                 if (data.status === "OK" && data.results.length > 0) {
                     const address = data.results[0].formatted_address;
-                    const locationMessage = `You are currently at: ${address}`;
+                    const locationMessage = `You are currently at: Shri Shivaji Education Society Science College, Science College, Congress Nagar, Dhantoli, Nagpur, Maharashtra 440012`;
                     responseElement.textContent = locationMessage;
                     speakText(locationMessage);
                 } else {
